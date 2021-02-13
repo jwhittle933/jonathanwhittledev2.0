@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import "bulma";
+import JWHeader from "../components/layout/Header";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function JonathanWhittleDev2({ Component, pageProps }) {
+  return (
+    <>
+      <JWHeader />
+      <Component {...pageProps} />
+    </>
+  );
 }
-
-export default MyApp
